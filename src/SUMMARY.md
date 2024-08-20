@@ -32,7 +32,7 @@
 - [FireWall tutorial](FireWall_tutorial.md)
 - [Initialization for ubuntu 20.04](Initialization_for_ubuntu_20.04.md)
 - [Laravel configuration on ubuntu 20.04 LTS](Laravel_configuration_on_ubuntu_20.04_LTS.md)
-- [linux architecture ?](linux_architecture_?.md)
+- [linux architecture ?](linux_architecture.md)
 - [owner changing](owner_chaning.md)
 - [python virtual environment](python_virtual_environment.md)
 - [scroll-jump issue fix in gnome GUI](scroll-jump_issue_fix_in_gnome_GUI.md)
