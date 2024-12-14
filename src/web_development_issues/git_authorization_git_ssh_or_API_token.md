@@ -10,19 +10,19 @@ I won't explain how to make Personal Access Token or PAT . I'll explain how to s
 
 to temporarily cache the token in Linux use the following command :
 
-```shell
+```bash
 git config --global credential.helper cache
 ```
 
 Note, however, that the token is only cached for 15 minutes by default. If you want the token to be cached for a longer period of time, add the `'cache --timeout=XX\'` option where XX is time in seconds. For example, to cache the token for 24 hours (86,400 seconds), type:
 
-```shell
+```bash
 git config --global credential.helper cache --timeout=86400
 ```
 
 to **permanently** cache the token on Linux, type:
 
-```shell
+```bash
 git config credential.helper store
 ```
 
@@ -34,14 +34,14 @@ The next time you are prompted for your GitHub user name and token, the informat
 > NOTE: if you adopt as SSH based approach to authentication , you will need to connect to your repo via `SSH` . For example , if user `someguy`'s repo name is `someproject` , you would connect to it via :
 > 
 
-```shell
+```bash
 git@github.com:someguy/someporject.git
 ```
 
 > [!WARNING]
 > this differs from the HTTPS option adopted in this workshop:
 
-```shell
+```bash
 https://github.com/someguy/someproject.git
 ```
 
@@ -50,7 +50,7 @@ https://github.com/someguy/someproject.git
 
 you might or might not already have public keys under `~/.ssh` file .
 
-```shell
+```bash
 ls -al ~/.ssh
 ```
 
@@ -59,18 +59,18 @@ If you do, look for the files ending with `.pub`. The contents of these public k
 ## Generating a new SSH key
 
 follow these instructions
-```shell
+```bash
 ssh-keygen -t <DESIRED_ID> -C "<your_github_email_address>"
 ```
 
 example:
-```shell
+```bash
 ssh-keygen -t rsa -b 4096 -C "someguy@gmail.com"
 ```
 
 example :
 
-```shell
+```bash
 ssh-keygen -t ed22519 -C "someguy@gmail.com"
 ```
 
@@ -113,17 +113,17 @@ The key's randomart image is:
 
 Next, you need to add the previously generated key to a process called `ssh-agent`.
 
-```shell
+```bash
 eval "$(ssh-agent -s)"
 ```
 
-```shell
+```bash
 ssh-add ~/.ssh/id_<the_id_picked>
 ```
 
 exampl , without any postfix like `.pub`:
 
-```shell
+```bash
 ssh-add ~/.ssh/id_e25519 # or ~/.ssh/id_rsa
 ```
 
@@ -143,7 +143,7 @@ In `~\.ssh` you should see a file ending with `.pub` such as `id_ed25519.pub`. T
 
 Open the contents of the `~/.ssh/id_ed25519.pub` file in your home folder.
 
-```shell
+```bash
 cat ~/.ssh/id_ed25519.pub
 ```
 
@@ -160,7 +160,7 @@ Next, you can test your connection from your Bash environment.
 
 In Bash, type the following (_do not_ substitute the `git@github.com` address).
 
-```shell
+```bash
 ssh -T git@github.com
 ```
 
@@ -185,7 +185,7 @@ Hi jdcolby! You've successfully authenticated, but GitHub does not provide shell
 
 At this point, you should be all set. As mentioned at the beginning of this page, when using SSH to connect to your GitHub repo, you need to use the SSH protocol. For example, to clone `repo1`, you would type:
 
-```shell
+```bash
 git clone git@github.com:someguy/someproject.git
 ```
 
@@ -197,7 +197,7 @@ If you’ve already cloned a repo using HTTPS on your local computer, you will n
 
 First, check that you are indeed using HTTPS:
 
-```shell
+```bash
 git remote -v
 ```
 
@@ -208,7 +208,7 @@ origin  https://github.com/jdcolby/repo1.git (push)
 
 To change from a HTTPS URL to a SSH URL, type:
 
-```shell
+```bash
 git remote set-url origin git@github.com:jdcolby/repo1.git
 ```
 

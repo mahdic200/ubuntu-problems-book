@@ -6,7 +6,7 @@ see [this page](https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-
 
 adding docker to apt repository:
 
-```shell
+```bash
 # Add Docker's official GPG key:
 sudo apt-get update # do this if its necessary
 sudo apt-get install ca-certificates curl
@@ -24,7 +24,7 @@ sudo apt-get update
 
 install :
 
-```shell
+```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
@@ -33,11 +33,11 @@ sign up to docker and copy your password, for logging to your account from CLI :
 
 create a file and paste your password WITHOUT `\n` character OK ? , or simply paste your password to the file and delete the next line . just your password .
 
-```shell
+```bash
 nano ~/my_password.txt
 ```
 
-```shell
+```bash
 cat ~/my_password.txt | docker login --username <YOUR_USERNAME> --password-stdin
 ```
 
@@ -45,28 +45,28 @@ just ignore the warning .
 
 run this command to verify your installation:
 
-```shell
+```bash
 sudo docker pull hello-world && \
 sudo docker run hello-world
 ```
 
 # Configure Docker to start on boot with systemd
 
-```shell
+```bash
 sudo systemctl enable docker.service
 ```
 
-```shell
+```bash
 sudo systemctl enable containerd.service
 ```
 
 for disabling this just do this :
 
-```shell
+```bash
 sudo systemctl disable docker.service
 ```
 
-```shell
+```bash
 sudo systemctl disable containerd.service
 ```
 

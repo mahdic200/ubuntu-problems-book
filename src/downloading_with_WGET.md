@@ -1,6 +1,6 @@
 go in the folder where you want to download the file .
 it's really fast :
 
-```shell
+```bash
 wget --inet4-only <URL>
 ```

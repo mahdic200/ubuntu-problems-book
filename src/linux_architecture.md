@@ -1,7 +1,7 @@
-```shell
+```bash
 uname
 ```
 
-```shell
+```bash
 dpkg --print-architecture
 ```

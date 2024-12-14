@@ -4,6 +4,6 @@ there is a problem when you open your git repository . all files seem to be chan
 
 to solve that issue go to that repository's folder and run this command :
 
-```shell
+```bash
 git config core.fileMode false
 ```

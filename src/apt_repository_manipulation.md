@@ -3,17 +3,17 @@ when you run `sudo apt update` and you see a package repository name which is fo
 # /etc/apt/sources.list.d/ directory
 
 navigate to this directory :
-```shell
+```bash
 cd /etc/apt/sources.list.d
 ```
 
 then find the package name with find :
-```shell
+```bash
 sudo find ./ -name '*package_name*'
 ```
 
 and after this :
-```shell
+```bash
 sudo grep -r 'package_name'
 ```
 

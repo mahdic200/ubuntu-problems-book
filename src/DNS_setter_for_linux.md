@@ -1,18 +1,18 @@
 navigate to your `~/.local/bin` folder :
 
-```shell
+```bash
 cd ~/.local/bin
 ```
 
 then make two files named `nson` and `nsoff` respectively :
 
-```shell
+```bash
 touch nson nsoff
 ```
 
 then give them permission to become executable :
 
-```shell
+```bash
 chmod +x nson nsoff
 ```
 

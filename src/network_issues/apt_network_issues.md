@@ -2,7 +2,7 @@
 
 if nothing works for your problem just open a terminal and run this  command :
 
-```shell
+```bash
 sudo nano /etc/apt/apt.conf
 ```
 
@@ -17,7 +17,7 @@ go in software and updates . then click on select-box "download from" , click on
 
 enter this command:
 
-```shell
+```bash
 code /etc/apt/sources.list.d/
 ```
 

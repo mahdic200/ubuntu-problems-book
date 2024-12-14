@@ -5,7 +5,7 @@ best clipboards for ubuntu :
 
 installation guide :
 
-```shell
+```bash
 # for clipit
 sudo apt install11 clipit
 # for diodon

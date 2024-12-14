@@ -1,3 +1,3 @@
-```shell
+```bash
 systemctl suspend
 ```

@@ -1,5 +1,5 @@
 enter command :
 
-```shell
+```bash
 history -c
 ```

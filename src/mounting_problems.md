@@ -4,23 +4,23 @@ unable to mount PATH to /media/USER/PATH
 
 find your drive name
 
-```shell
+```bash
 sudo fdisk -l
 ```
 
-```shell
+```bash
 sudo mkdir /media/USER/pick_a_name
 ```
 
 then mount the drive
 
-```shell
+```bash
 sudo mount FULL_PATH_OF_DRIVE /media/USER/picked_name
 ```
 
 # unmount with umount
 
-```shell
+```bash
 sudo umount /media/USER/picked_name
 ```
 
@@ -30,10 +30,10 @@ done :)
 for ntfs file systems you should fix them because dual boot will harm your drive system file type :
 
 
-```shell
+```bash
 sudo apt install ntfs-3g
 ```
 
-```shell
+```bash
 sudo ntfsfix -b -d /path/to/drive
 ```

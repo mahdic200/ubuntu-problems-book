@@ -1,22 +1,22 @@
 clear DNS cache:
 
-```shell
+```bash
 sudo resolvectl flush-caches
 ```
 
 problem to installing packages:
 
-```shell
+```bash
 sudo apt update
 ``` 
 
-```shell
+```bash
 sudo apt-get update
 ```
 
 if net not working for getting apt packages : 
 
-```shell
+```bash
 sudo nano /etc/resolv.conf
 ```
 
@@ -32,6 +32,6 @@ nameserver 8.8.4.4
 
 solve apt update network issue:
 
-```shell
+```bash
 echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
 ```

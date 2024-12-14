@@ -1,6 +1,8 @@
+# desktop icons for applications
+
 navigate to `~/.local/share/applications` . there should be some file with prefix `.desktop` . if it's not then you can create one . this is an example of how to do it .
 
-```shell
+```bash
 nano dev.zed.Zed-Preview.desktop
 ```
 

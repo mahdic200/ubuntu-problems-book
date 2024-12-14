@@ -2,24 +2,24 @@ I'm so confused and tired at this point I'm writing this note for myself . after
 
 run these commands in shell :
 
-```shell
+```bash
 sudo apt install certbot python3-certbot-nginx
 ```
 
-```shell
+```bash
 sudo certbot --nginx
 ```
 
 you'll be asked to answer a few questions . don't worry answer all of them .
 
-```shell
+```bash
 sudo certbot renew --dry-run
 ```
 
 now go to your nginx domain conf file or default file . lets say it with example :
 
 example:
-```shell
+```bash
 sudo nano /etc/nginx/sites-available/domain.ir
 ```
 
@@ -40,13 +40,13 @@ server {
 
 now save the file and come out . first test and then restart the nginx :
 
-```shell
+```bash
 nginx -t
 ```
 
 if everything is ok :
 
-```shell
+```bash
 sudo systemctl restart nginx
 ```
 

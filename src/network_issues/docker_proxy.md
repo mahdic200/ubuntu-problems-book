@@ -6,15 +6,15 @@ just add docker.ir proxy server in `~/.docker/config.json` and add mirror to `/e
 
 
 
-```shell
+```bash
 sudo mkdir -p /etc/systemd/system/docker.service.d
 ```
 
-```shell
+```bash
 sudo touch /etc/systemd/system/docker.service.d/http-proxy.conf
 ```
 
-```shell
+```bash
 sudo nano /etc/systemd/system/docker.service.d/http-proxy.conf
 ```
 
@@ -33,14 +33,14 @@ Environment="HTTPS_PROXY=https://example.com:3129"
 > [!IMPORTANT] reload the docker
 > in some cases like this you have to reload the docker to new settings be loaded in program and work correctly .
 
-```shell
+```bash
 sudo systemctl daemon-reload && \
 sudo systemctl restart docker
 ```
 
 verify completed everything fine :
 
-```shell
+```bash
 sudo systemctl show --property=Environment docker
 ```
 

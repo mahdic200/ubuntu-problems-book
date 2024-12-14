@@ -1,6 +1,6 @@
 just use pm2
 
-```shell
+```bash
 npm install -g pm2
 ```
 
@@ -9,7 +9,7 @@ starting a nextjs server:
 
 navigate to your project folder and enter this :
 
-```shell
+```bash
 sudo nano eco.config.js
 ```
 
@@ -34,19 +34,19 @@ module.exports = {
 
 listing processes :
 
-```shell
+```bash
 pm2 ls
 ```
 
 saving processes to execute in boot time :
 
-```shell
+```bash
 pm2 save
 ```
 
 monitoring :
 
-```shell
+```bash
 pm2 monit
 ```
 

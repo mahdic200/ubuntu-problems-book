@@ -1,12 +1,12 @@
 
 for files :
 
-```shell
+```bash
 ln -s [FILE] [LINK]
 ```
 
 for directories:
 
-```shell
+```bash
 ln [DIR1] [DIR2]
 ```
