@@ -14,6 +14,8 @@
 - [hardware control](hardware_control.md)
     [CPU temperature](hardware_control/CPU_temperature.md)
     [command line system monitoring](hardware_control/)
+- [Latex usage](latex_usage.md)
+    - [latex installation](latex_usage/latex_installation.md)
 - [network issues](network_issues.md)
     - [network issues](network_issues/network_issues.md)
     - [apt network issues](network_issues/apt_network_issues.md)
