@@ -23,6 +23,7 @@
     - [CURL proxy](network_issues/CURL_proxy.md)
     - [proxy in ubuntu](network_issues/proxy_in_ubuntu.md)
     - [docker proxy](network_issues/docker_proxy.md)
+    - [Telegram Proxy](network_issues/Telegram_MTProxy.md)
 - [personalize](personalize.md)
     - [small text issue](personalize/small_text_issue.md)
     - [desktop icons for applications](personalize/desktop_icons_for_applications.md)
