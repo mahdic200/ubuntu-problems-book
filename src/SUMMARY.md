@@ -25,6 +25,7 @@
     - [docker proxy](network_issues/docker_proxy.md)
     - [Telegram Proxy](network_issues/Telegram_MTProxy.md)
 - [personalize](personalize.md)
+    - [changing system name](personalize/changing_system_name.md)
     - [small text issue](personalize/small_text_issue.md)
     - [desktop icons for applications](personalize/desktop_icons_for_applications.md)
     - [Terminal customization](personalize/terminal_customization.md)
