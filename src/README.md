@@ -2,7 +2,7 @@
 # ubuntu problems ! written by [mahdic200](https://github.com/mahdic200)
 
 > [!NOTE]
-> build V1.0.2
+> build V1.0.3
 
 in this series , I've wrote a bunch of notes which are really handy ! . specially for beginners like us in ubuntu which are not comfortable without GUI .
 
