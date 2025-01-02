@@ -2,3 +2,9 @@ book
 /.vscode
 /.github
 /.obsidian
+/*.xz
+/*.gz
+/*.bz
+/*.zip
+/*.rar
+
