@@ -7,6 +7,7 @@
     - [desktop icons ng](debian_12_post_installation/desktop_icons_ng.md)
     - [mysql installation for xampp](debian_12_post_installation/mysql_installation_for_xampp.md)
     - [night light issues](debian_12_post_installation/night_light_issue.md)
+    - [nvidia driver installation](debian_12_post_installation/nvidia_driver_installation.md)
     - [shortcut customization](debian_12_post_installation/shortcut_customizations.md)
     - [XDM configurations](debian_12_post_installation/XDM_configurations.md)
 - [development issues](development_issues.md)
