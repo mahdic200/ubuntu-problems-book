@@ -12,6 +12,21 @@ tar -czvf archive_name.tar.gz /path/to/directory
 tar -xzvf archive_name.tar.gz
 ```
 
+## list archive
+
+if you want to take a quick look at archive items you may use simple `-t` option which is an alias for `--list` option . let me give you an example :
+
+```bash
+tar -tf archive.tar.xz
+```
+
+## exclude
+
+sometimes you just want to compress your folders and files but with one or more exceptions . you may simply use `--exclude` . let me give you an example :
+
+```bash
+tar --exclude=pattern -cJvf archive.tar.xz /folder1 /folder2 /folder3
+```
 # Handy Linux Commands
 
 ## 1. Compressing and Decompressing in Linux
