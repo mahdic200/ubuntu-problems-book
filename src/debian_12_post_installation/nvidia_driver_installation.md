@@ -1,3 +1,6 @@
+# Source
+
+This [debian wiki](https://wiki.debian.org/NvidiaGraphicsDrivers) is the reference and you MUST read it ! . and also if you want to use CUDA for Tensorflow you MUST read it's documentation .
 # Nvidia driver installation
 
 #### 1. **Ensure Non-Free Repositories Are Enabled**
@@ -33,7 +36,7 @@ sudo apt install nvidia-driver
 Reboot the system:
 
 ```bash
-sudo reboot
+sudo systemctl reboot
 ```
 
 After reboot, check the GPU status:
@@ -71,17 +74,3 @@ Update the initramfs and reboot:
 sudo update-initramfs -u
 sudo reboot
 ```
-
-#### 8. **Optional: PRIME Configuration (For Hybrid GPUs)**
-
-To enable GPU switching:
-
-```bash
-sudo apt install nvidia-prime
-sudo prime-select nvidia  # Switch to NVIDIA
-sudo prime-select intel   # Switch to Intel
-```
-
----
-
-Feel free to include this guide in your book, and let me know if you'd like any revisions or additional notes!
