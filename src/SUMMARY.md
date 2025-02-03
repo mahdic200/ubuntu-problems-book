@@ -41,6 +41,7 @@
     - [git authorization git ssh or API token](web_development_issues/git_authorization_git_ssh_or_API_token.md)
     - [git ignore file mode](web_development_issues/git_ignore_file_mode.md)
     - [import sql from commandline](web_development_issues/import_sql_from_commandline.md)
+    - [laravel broadcasting instructions](web_development_issues/laravel_broadcasting_instructions.md)
     - [web development issues](web_development_issues/imprt_sql_from_commandline.md)
     - [point domain to VPS manually](web_development_issues/point_domain_to_VPS_manually.md)
     - [NextJS deploy](web_development_issues/nextjs_deploy.md)
