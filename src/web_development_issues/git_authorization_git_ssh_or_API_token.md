@@ -71,12 +71,12 @@ ssh-keygen -t rsa -b 4096 -C "someguy@gmail.com"
 example :
 
 ```bash
-ssh-keygen -t ed22519 -C "someguy@gmail.com"
+ssh-keygen -t ed25519 -C "someguy@gmail.com"
 ```
 
 ```
 Generating public/private ed25519 key pair.
-Enter file in which to save the key (/home/jdcolby/.ssh/id_ed25519):
+Enter file in which to save the key (/home/user/.ssh/id_ed25519):
 ```
 
 This creates a new SSH key, using the provided email as a label. Accept the default file location and press the `Enter` key.
@@ -91,10 +91,10 @@ At the prompt, type a secure passphrase. This passphrase will be used instead of
 You will then see an output similar to this:
 
 ```
-Your identification has been saved in /home/jdcolby/.ssh/id_ed25519
-Your public key has been saved in /home/jdcolby/.ssh/id_ed25519.pub
+Your identification has been saved in /home/user/.ssh/id_ed25519
+Your public key has been saved in /home/user/.ssh/id_ed25519.pub
 The key fingerprint is:
-SHA256:AuErG+8I8YUkRbNn1iNiGB/T3P6p4oWtmHA821i3bPO jdcolby@my_college.edu
+SHA256:AuErG+8I8YUkRbNn1iNiGB/T3P6p4oWtmHA821i3bPO user@my_college.edu
 The key's randomart image is:
 +--[ED25519 256]--+
 |    ..o.o        |
@@ -121,10 +121,10 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_<the_id_picked>
 ```
 
-exampl , without any postfix like `.pub`:
+example , without any postfix like `.pub`:
 
 ```bash
-ssh-add ~/.ssh/id_e25519 # or ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_ed25519 # or ~/.ssh/id_rsa
 ```
 
 
@@ -132,8 +132,8 @@ ssh-add ~/.ssh/id_e25519 # or ~/.ssh/id_rsa
 You’ll then be prompted to enter the passphrase used in the earlier step.
 
 ```
-Enter passphrase for /home/jdcolby/.ssh/id_ed25519:
-Identity added: /home/jdcolby/.ssh/id_ed25519 (someguy@gmail.com)
+Enter passphrase for /home/user/.ssh/id_ed25519:
+Identity added: /home/user/.ssh/id_ed25519 (someguy@gmail.com)
 ```
 
 
@@ -174,11 +174,11 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
 
 Type `yes` to continue.
 
-The next warning should list your account name (e.g. `jdcolby` in this working example).
+The next warning should list your account name (e.g. `user` in this working example).
 
 ```
 Warning: Permanently added 'github.com' (RSA) to the list of known hosts.
-Hi jdcolby! You've successfully authenticated, but GitHub does not provide shell access.
+Hi user! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 ## Cloning a GitHub repo using SSH
@@ -202,14 +202,14 @@ git remote -v
 ```
 
 ```
-origin  https://github.com/jdcolby/repo1.git (fetch)
-origin  https://github.com/jdcolby/repo1.git (push)
+origin  https://github.com/user/repo1.git (fetch)
+origin  https://github.com/user/repo1.git (push)
 ```
 
 To change from a HTTPS URL to a SSH URL, type:
 
 ```bash
-git remote set-url origin git@github.com:jdcolby/repo1.git
+git remote set-url origin git@github.com:user/repo1.git
 ```
 
 
