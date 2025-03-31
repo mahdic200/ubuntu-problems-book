@@ -79,6 +79,7 @@
 - [suspend or hibernate](suspend_or_hibernate.md)
 - [symlink issues on NTFS](symlink_issue_on_NTFS.md)
 - [there are stopped jobs](there_are_stopped_jobs.md)
+- [tracking packages](tracking_packages.md)
 - [ubuntu boot problems](ubuntu_boot_problems.md)
 - [vscode default browser](vscode_default_browser.md)
 
