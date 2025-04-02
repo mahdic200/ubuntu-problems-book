@@ -39,6 +39,7 @@
 	- [command line shortcuts](tutorials/command_line_shortcuts.md)
 - [web development issues](web_development_issues.md)
     - [deploy Laravel on nginx](web_development_issues/deploy_laravel_on_nginx.md)
+    - [postgres autoincrement sequence](web_development_issues/postgres_autoincrement_sequence.md)
     - [SSL configuration for nginx](web_development_issues/SSL_configuration_for_nginx.md)
     - [git authorization git ssh or API token](web_development_issues/git_authorization_git_ssh_or_API_token.md)
     - [git ignore file mode](web_development_issues/git_ignore_file_mode.md)
