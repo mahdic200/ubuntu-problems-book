@@ -83,4 +83,4 @@
 - [tracking packages](tracking_packages.md)
 - [ubuntu boot problems](ubuntu_boot_problems.md)
 - [vscode default browser](vscode_default_browser.md)
-
+- [x-ui3 installation with tls](x-ui3_installation_with_tls.md)
