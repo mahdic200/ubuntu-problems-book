@@ -1,12 +1,17 @@
 # Summary
 
 [Introduction](README.md)
+- [android development](android_development/android_development.md)
+    - [android build flow on debian 12](android_development/android_build_flow_on_debian_12.md)
+    - [expo not working on phone](android_development/expo_not_working_on_phone.md)
+    - [reactnative with expo](android_development/reactnative_with_expo.md)
 - [debian 12 post installation](debian_12_post_installation.md)
     - [add source list](debian_12_post_installation/add_sources_list.md)
     - [app indicator](debian_12_post_installation/app_indicator.md)
     - [desktop icons ng](debian_12_post_installation/desktop_icons_ng.md)
     - [graphics card driver switching](debian_12_post_installation/graphics_card_driver_switching.md)
     - [hiding grub bootloader](debian_12_post_installation/hiding_grub_bootloader.md)
+    - [kernel updating](debian_12_post_installation/kernel_updating.md)
     - [mysql installation for xampp](debian_12_post_installation/mysql_installation_for_xampp.md)
     - [night light issues](debian_12_post_installation/night_light_issue.md)
     - [nvidia driver installation](debian_12_post_installation/nvidia_driver_installation.md)
