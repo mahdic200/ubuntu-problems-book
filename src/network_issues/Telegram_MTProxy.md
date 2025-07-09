@@ -78,7 +78,7 @@ sudo curl -s https://core.telegram.org/getProxyConfig -o proxy-multi.conf
 
 11. Generate a proxy secret. This will output a string of random numbers and letters. Keep the result at hand, you will need it in a few steps:
 ```
-head -c 16 /dev/urandom | xxd -ps
+openssl rand -hex 16
 ```
 
 12. Create a `mtproxy` user to run the proxy:
