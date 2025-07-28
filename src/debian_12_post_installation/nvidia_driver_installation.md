@@ -1,3 +1,7 @@
+# first update the kernel
+
+Kernel update instructions to the latest stable for debian is mentioned in this folder's notes as kernel_updating . please read , please .
+
 # Source
 
 This [debian wiki](https://wiki.debian.org/NvidiaGraphicsDrivers) is the reference and you MUST read it ! . and also if you want to use CUDA for Tensorflow you MUST read it's documentation .
