@@ -44,7 +44,7 @@ Now, for the very first time and only time , you must execute `studio.sh` in `/h
 
 After you executed that IN THE TERMINAL SESSION WITH ACTIVE VPN , the AndroidStudio is able to download it's necessary files and configure your application .
 
-> [!SUCCESS]
+> [!TIP]
 > Program must fail on downloading Gradle , it's normal , close the program and do the rest , I'll tell you what to do .
 
 The real pain in the ass is `Gradle` , gradle doesn't respect to your terminal proxy environment variables and you must tell it explicitly to use which network .
@@ -67,7 +67,7 @@ Why `127.0.0.1` ? because I'm using proxy on my machine and not an external prox
 > [!WARNING]
 > Change the 8889 with your actual port, you can check the port you are using by going to the settings > network > Network Proxy . else it won't work and again waste of time  and energy .
 
-> [!SUCCESS]
+> [!TIP]
 > Save and exit .
 
 
@@ -100,7 +100,7 @@ export PATH=$HOME/AndroidStudio/bin:$PATH
 >
 > Else Change the 27.0.12077973 with the version which is in ~/Android/Sdk/ndk/ , don't panic, there will be just folders with some odd names (they all are numbers) which they are the names of different ndk versions . so just pick one 😂 .
 
-> [!SUCCESS]
+> [!TIP]
 > Save and exit
 
 # Trouble Shooting In Making Android Projects Using Android Studio

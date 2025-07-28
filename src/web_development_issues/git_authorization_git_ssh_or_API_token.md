@@ -30,7 +30,8 @@ The next time you are prompted for your GitHub user name and token, the informat
 
 # SSH based authentication
 
-> [!WARNING] can't use usual remote anymore !
+> [!WARNING]
+> can't use usual remote anymore !
 > NOTE: if you adopt as SSH based approach to authentication , you will need to connect to your repo via `SSH` . For example , if user `someguy`'s repo name is `someproject` , you would connect to it via :
 > 
 
