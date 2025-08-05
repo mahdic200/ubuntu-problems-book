@@ -1,5 +1,14 @@
 # login loop back
 
+If you try to source any files that don't exist in `~/.profile` file, your GUI gnome will stuck in a looped login trap . if this ever happened to you do this :
+1. press `Ctrl + Alt + F2`
+2. After seeing the terminal , login to your user in text mode
+3. then open the `.profile` with nano or any editor you like
+4. search for any file that doesn't exist and tried to be accessed or sourced .
+5. delete it, and exit from the terminal session
+6. press `Ctrl + Alt + F1` to get back to GUI, now login
+Your welcome .
+
 just remove the fucking `.config/gnome-session` directory .
 
 
