@@ -37,6 +37,7 @@
     - [changing system name](personalize/changing_system_name.md)
     - [small text issue](personalize/small_text_issue.md)
     - [desktop icons for applications](personalize/desktop_icons_for_applications.md)
+    - [nautilus places](personalize/nautilus_places.md)
     - [Terminal customization](personalize/terminal_customization.md)
     - [Timezone settings](personalize/timezone_settings.md)
 - [remote server connection](remote_server_connection/remote_server_connection.md)
