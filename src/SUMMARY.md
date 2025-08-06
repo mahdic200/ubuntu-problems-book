@@ -47,6 +47,8 @@
     - [Checking Passphrase](ssh/check_passphrase.md)
     - [Generating a new ssh key](ssh/generate_key.md)
     - [SSH passphrase for logging in](ssh/ssh_passphrase_for_login.md)
+- [Virtual Machine](vm/vm.md)
+	- [virt-manager](vm/virt_manager.md)
 - [tutorials](tutorials/tutorials.md)
 	- [command line shortcuts](tutorials/command_line_shortcuts.md)
 - [web development issues](web_development_issues.md)
