@@ -81,6 +81,7 @@
 - [debian suspend crashing](debian_suspend_crashing.md)
 - [DNS setter for linux.md](DNS_setter_for_linux.md)
 - [downloading with WGET](downloading_with_WGET.md)
+- [find command](find_command.md)
 - [FireWall tutorial](FireWall_tutorial.md)
 - [font config not found](font_config_not_found.md)
 - [Initialization for ubuntu 20.04](Initialization_for_ubuntu_20.04.md)
