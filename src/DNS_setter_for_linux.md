@@ -64,3 +64,73 @@ nmcli con down "$WIFI_CONNECTION" && nmcli con up "$WIFI_CONNECTION"
 echo "DNS settings for WiFi connection '$WIFI_CONNECTION' have been cleared."
 
 ```
+
+---------
+
+# ChatGPT's New Advice
+
+You **do have NetworkManager**, and it is managing your Wi‑Fi/DNS. So don’t edit `/etc/resolv.conf` by hand; it may be overwritten.
+
+Use `nmcli` to set DNS for your connection.
+
+## 1) Find your active connection name
+```bash
+nmcli connection show --active
+```
+
+Note the `NAME` for your Wi‑Fi, likely something like `mahdic200`.
+
+## 2) Set custom DNS for that connection
+Replace `YOUR_CONN` with the exact connection name:
+```bash
+sudo nmcli connection modify "YOUR_CONN" ipv4.dns "1.1.1.1 8.8.8.8"
+sudo nmcli connection modify "YOUR_CONN" ipv4.ignore-auto-dns yes
+```
+
+If you also want IPv6 DNS:
+```bash
+sudo nmcli connection modify "YOUR_CONN" ipv6.dns "2606:4700:4700::1111 2001:4860:4860::8888"
+sudo nmcli connection modify "YOUR_CONN" ipv6.ignore-auto-dns yes
+```
+
+## 3) Reconnect
+```bash
+sudo nmcli connection down "YOUR_CONN"
+sudo nmcli connection up "YOUR_CONN"
+```
+
+If it’s your only network and `down` disconnects awkwardly, you can instead do:
+```bash
+sudo nmcli device reapply wlp0s20f3
+```
+or just reconnect from the network menu.
+
+## 4) Verify
+```bash
+nmcli device show wlp0s20f3 | grep DNS
+```
+
+Also:
+```bash
+resolvectl status
+```
+or
+```bash
+cat /etc/resolv.conf
+```
+
+## 5) Restore automatic DNS later
+```bash
+sudo nmcli connection modify "YOUR_CONN" ipv4.ignore-auto-dns no
+sudo nmcli connection modify "YOUR_CONN" ipv4.dns ""
+sudo nmcli connection up "YOUR_CONN"
+```
+
+## Notes
+- This is **per-connection**, not per-user.
+- If your Wi‑Fi name changes or you use another hotspot/router, you may need to set DNS on that connection too.
+
+If you want, I can give you the exact commands after you paste:
+```bash
+nmcli connection show --active
+```
