@@ -59,3 +59,41 @@ Keep the SSH tunnel running in the background on your local machine, and the VPS
   
 
 Does this work?
+
+The remote port 1080 is already in use on the VPS. Either:
+
+**Option 1: Use a different port**
+
+```bash
+ssh -i ~/.ssh/id_ed25519myvps -R 2080:192.168.1.6:8889 mahdi@87.248.156.197 -p 9011 -N
+```
+
+Then on VPS use `localhost:2080` for the proxy.
+
+**Option 2: Kill the process using port 1080 on VPS**
+
+```bash
+# On VPS, find what's using port 1080
+sudo lsof -i :1080
+# or
+sudo ss -tlnp | grep 1080
+
+# Kill it
+sudo kill -9 <PID>
+```
+
+Then try the original command again.
+
+**Option 3: Check if there's an old SSH tunnel still running**
+
+On your local machine:
+
+```bash
+ps aux | grep ssh
+# Look for the reverse tunnel command and kill it
+kill <PID>
+```
+
+Then start the tunnel again.
+
+I'd recommend **Option 1** (use a different port like 2080) to avoid conflicts.
