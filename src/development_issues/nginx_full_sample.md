@@ -135,3 +135,28 @@ proxy_cache_bypass $http_upgrade;
 
 }
 ```
+
+# Increasing client max request size
+
+Add this after error log:
+
+```
+# Allow 30MB requests
+
+client_max_body_size 30M;
+```
+
+## For a specific api endpoint with proxy pass
+
+```
+# Specific endpoint - allow 30MB for book uploads
+
+location /api/admin/study/book/store {
+
+client_max_body_size 30M;
+
+proxy_pass http://fiber_backend;
+
+}
+```
+

@@ -12,6 +12,13 @@ ssh -R 1080:192.168.1.6:8889 mahdi@87.248.156.197 -p 9011 -N
 
 ```
 
+Or if you want your port to be accessible via all interfaces:
+
+```bash
+
+ssh -g -R 1080:192.168.1.6:8889 mahdi@87.248.156.197 -p 9011 -N
+
+```
   
 
 This creates a reverse tunnel:
